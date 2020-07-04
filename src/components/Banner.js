@@ -7,7 +7,7 @@ const Banner = (props) => (
                 <h1>Francisco B. Sousa</h1>
             </header>
             <div className="content">
-                <p>Tour guide in Lisbon with a decade of experience<br />
+                <p>Tour guide in Lisbon with a decade of experience. <br />
                 I like writing, drawing, and reciting poetry.</p>
                 <ul className="actions">
                     <li><a href="/tours" className="button next scrolly">Show me</a></li>
