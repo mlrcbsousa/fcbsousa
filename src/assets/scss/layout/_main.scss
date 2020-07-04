@@ -23,4 +23,22 @@
 			background-color: transparent;
 			border-bottom: solid 1px _palette(border);
 		}
-	}
+  }
+  
+  #one {
+    background-color: _palette(bg-alt);
+    color: _palette(fgb);
+
+    h3 {
+      color: _palette(fgb);
+
+      &:after {
+        content: '';
+        background-color: _palette(fgb);
+        display: block;
+        height: 2px;
+        margin: 0.325em 0 0.5em 0;
+        width: 100%;
+      }
+    }
+  }

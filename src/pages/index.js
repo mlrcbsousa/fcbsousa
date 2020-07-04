@@ -4,12 +4,12 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
-import pic01 from '../assets/images/pic01.jpg'
-import pic02 from '../assets/images/pic02.jpg'
-import pic03 from '../assets/images/pic03.jpg'
-import pic04 from '../assets/images/pic04.jpg'
-import pic05 from '../assets/images/pic05.jpg'
-import pic06 from '../assets/images/pic06.jpg'
+import tour_guide from '../assets/images/tour_guide.jpg'
+import writing from '../assets/images/writing.jpg'
+import blog from '../assets/images/blog.jpg'
+import cook from '../assets/images/cook.jpg'
+// import pic05 from '../assets/images/pic05.jpg'
+// import pic06 from '../assets/images/pic06.jpg'
 
 class HomeIndex extends React.Component {
     render() {
@@ -17,7 +17,7 @@ class HomeIndex extends React.Component {
         return (
             <Layout>
                 <Helmet
-                    title="Gatsby Starter - Forty"
+                    title="Francisco B. Sousa"
                     meta={[
                         { name: 'description', content: 'Sample' },
                         { name: 'keywords', content: 'sample, something' },
@@ -29,35 +29,35 @@ class HomeIndex extends React.Component {
 
                 <div id="main">
                     <section id="one" className="tiles">
-                        <article style={{backgroundImage: `url(${pic01})`}}>
+                        <article style={{backgroundImage: `url(${tour_guide})`}}>
                             <header className="major">
-                                <h3>Tour Guide</h3>
-                                <p>Expressing my love for History</p>
+                                <h3>Tours</h3>
+                                <p>Expressing my passion for History</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            <Link to="/tours" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${pic02})`}}>
+                        <article style={{backgroundImage: `url(${writing})`}}>
                             <header className="major">
-                                <h3>Writer</h3>
-                                <p>Various previous publications and other writing</p>
+                                <h3>Writing</h3>
+                                <p>Books, articles and essays</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/* <Link to="/landing" className="link primary"></Link> */}
                         </article>
-                        <article style={{backgroundImage: `url(${pic03})`}}>
+                        <article style={{backgroundImage: `url(${blog})`}}>
                             <header className="major">
-                                <h3>Gajo Sensual</h3>
-                                <p>Magna Cum Lowdly</p>
+                                <h3>Blog</h3>
+                                <p>History, philosophy and politics</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/* <Link to="/landing" className="link primary"></Link> */}
                         </article>
-                        <article style={{backgroundImage: `url(${pic04})`}}>
+                        <article style={{backgroundImage: `url(${cook})`}}>
                             <header className="major">
                                 <h3>Products</h3>
                                 <p>Ebooks and Audio recordings</p>
                             </header>
-                            <Link to="/landing" className="link primary"></Link>
+                            {/* <Link to="/landing" className="link primary"></Link> */}
                         </article>
-                        <article style={{backgroundImage: `url(${pic05})`}}>
+                        {/* <article style={{backgroundImage: `url(${pic05})`}}>
                             <header className="major">
                                 <h3>YouTube Channel</h3>
                                 <p>Political discourse for Sapien sapiens</p>
@@ -70,16 +70,16 @@ class HomeIndex extends React.Component {
                                 <p>maps and funny cartoons</p>
                             </header>
                             <Link to="/landing" className="link primary"></Link>
-                        </article>
+                        </article> */}
                     </section>
                     <section id="two">
                         <div className="inner">
                             <header className="major">
-                                <h2>I cook Better than your Mother</h2>
+                                <h2>About Me</h2>
                             </header>
-                            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+                            <p>Hi, my name is Francisco and I'm from Lisbon. I studied History at university, and mastered in Politics. I guide people through experiencing my hometown through the perspective of a local, proud of his country's history. </p>
                             <ul className="actions">
-                                <li><Link to="/landing" className="button next">Get Started</Link></li>
+                                <li><Link to="/tours" className="button next">See it in action</Link></li>
                             </ul>
                         </div>
                     </section>

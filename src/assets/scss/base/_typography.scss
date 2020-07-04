@@ -56,7 +56,8 @@
 	}
 
 	p {
-		margin: 0 0 _size(element-margin) 0;
+    margin: 0 0 _size(element-margin) 0;
+    font-family: _font(family-fixed);
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -156,7 +157,7 @@
 		margin: _size(element-margin) 0;
 
 		&.major {
-			margin: (_size(element-margin) * 1.5) 0;
+      margin: (_size(element-margin) * 1.5) 0;
 		}
 	}
 
