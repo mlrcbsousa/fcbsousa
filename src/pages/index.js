@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
 import tour_guide from '../assets/images/tour_guide.jpg'
-import writing from '../assets/images/writing.jpg'
+import panel_speaker from '../assets/images/panel_speaker.jpg'
 import blog from '../assets/images/blog.jpg'
 import cook from '../assets/images/cook.jpg'
 // import pic05 from '../assets/images/pic05.jpg'
@@ -36,7 +36,7 @@ class HomeIndex extends React.Component {
                             </header>
                             <Link to="/tours" className="link primary"></Link>
                         </article>
-                        <article style={{backgroundImage: `url(${writing})`}}>
+                        <article style={{backgroundImage: `url(${panel_speaker})`}}>
                             <header className="major">
                                 <h3>Writing</h3>
                                 <p>Books, articles and essays</p>
@@ -77,7 +77,7 @@ class HomeIndex extends React.Component {
                             <header className="major">
                                 <h2>About Me</h2>
                             </header>
-                            <p>Hi, my name is Francisco and I'm from Lisbon. I studied History at university, and mastered in Politics. I guide people through experiencing my hometown through the perspective of a local, proud of his country's history. </p>
+                            <p>Hi, my name is Francisco and I’m from Lisbon. I studied History at university, and mastered in Politics. I help curious travellers experience my hometown through the eyes of a local by guiding them around the most captivating parts of the city and cooking typical dishes for them.</p>
                             <ul className="actions">
                                 <li><Link to="/tours" className="button next">See it in action</Link></li>
                             </ul>
