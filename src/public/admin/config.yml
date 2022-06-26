@@ -1,0 +1,53 @@
+backend:
+  name: github
+  repo: mlrcbsousa/fcbsousa
+media_folder: "src/public/media"
+public_folder: "/media"
+publish_mode: editorial_workflow
+collections:
+  - label: "Home"
+    name: "home"
+    files:
+      - label: "Homepage"
+        name: "homepage"
+        file: "src/index.md"
+        delete: false
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "home" }
+          - label: Hero
+            name: hero
+            fields:
+            - { label: "Name", name: "name", widget: "string" }
+            - { label: "Text", name: "text", widget: "string" }
+            - { label: "Tag line", name: "tagline", widget: "string", required: false }
+            - label: Actions
+              name: actions
+              widget: list
+              fields:
+                - { label: "Theme", name: "theme", widget: "string", default: "brand" }
+                - { label: "Text", name: "text", widget: "string" }
+                - { label: "Link", name: "link", widget: "string" }
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - { label: "Icon", name: "icon", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Details", name: "details", widget: "string" }
+  - label: "About"
+    name: "about"
+    folder: "src/blog"
+    file: "src/about.md"
+    delete: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Meta description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  - label: "Post"
+    name: "posts"
+    folder: "src/blog"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Meta description", name: "description", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

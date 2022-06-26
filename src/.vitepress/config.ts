@@ -12,14 +12,14 @@ const markdown: MarkdownOptions = {
 const config: UserConfig = {
   lang: 'en-UK',
   title: 'Francisco B. Sousa',
-  description: 'Just playing around.',
-  titleTemplate: 'Home',
+  description: 'description.',
+  titleTemplate: 'titleTemplate',
   markdown,
   lastUpdated: true,
   themeConfig: {
     // logo: '/.vitepress/assets/logo.svg',
     nav: [
-      { text: 'Link', link: '/index' },
+      { text: 'About', link: '/about' },
       {
         text: 'Dropdown',
         items: [
@@ -27,12 +27,12 @@ const config: UserConfig = {
           { text: 'Item B', link: '/item-2' },
           { text: 'Item C', link: '/item-3' }
         ]
-      }
+      },
     ],
     sidebar: {
       example: [
         {
-          text: 'Another sidebars',
+          text: 'Another sidebar',
           collapsible: true,
           items: []
         }
@@ -43,7 +43,7 @@ const config: UserConfig = {
           text: 'Contents',
           collapsible: true,
           items: [
-            { text: 'Blog post', link: '/index' },
+            { text: 'About', link: '/about' },
           ]
         }
       ],
