@@ -1,0 +1,15 @@
+{
+  "name": "fcbsousa",
+  "version": "1.0.0",
+  "description": "Brother's Blog",
+  "author": "mlrcbsousa",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "serve": "vitepress serve src"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.42",
+    "vitepress": "^1.0.0-alpha.1"
+  }
+}
