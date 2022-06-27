@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vitepress dev src",
     "build": "vitepress build src",
-    "serve": "vitepress serve src"
+    "serve": "vitepress serve src --port 8080",
+    "start": "npm run build && npm run serve"
   },
   "devDependencies": {
     "@types/node": "^17.0.42",
