@@ -1,9 +1,7 @@
 import { UserConfig, MarkdownOptions, defineConfig } from 'vitepress';
+import { itemsFromFolder } from '../../lib/utils'
 
-interface SidebarItem {
-  text: string
-  link: string
-}
+const blogItems = itemsFromFolder('blog');
 
 const markdown: MarkdownOptions = {
   lineNumbers: true,
@@ -20,31 +18,29 @@ const config: UserConfig = {
     // logo: '/.vitepress/assets/logo.svg',
     nav: [
       { text: 'About', link: '/about' },
-      {
-        text: 'Dropdown',
-        items: [
-          { text: 'Item A', link: '/item-1' },
-          { text: 'Item B', link: '/item-2' },
-          { text: 'Item C', link: '/item-3' }
-        ]
-      },
+      // {
+      //   text: '🔍',
+      //   items: [
+      //     { text: 'Item A', link: '/item-1' },
+      //     { text: 'Item B', link: '/item-2' },
+      //     { text: 'Item C', link: '/item-3' }
+      //   ]
+      // },
     ],
     sidebar: {
-      example: [
-        {
-          text: 'Another sidebar',
-          collapsible: true,
-          items: []
-        }
-      ],
+      // example: [
+      //   {
+      //     text: 'Another sidebar',
+      //     collapsible: true,
+      //     items: []
+      //   }
+      // ],
       // Has to be last so that it doesn't override pathed sidebars
       "/": [
         {
-          text: 'Contents',
-          collapsible: true,
-          items: [
-            { text: 'About', link: '/about' },
-          ]
+          text: 'Blog',
+          collapsible: false,
+          items: blogItems
         }
       ],
     },
