@@ -1,12 +1,10 @@
 ---
 layout: home
-
 head:
   - - script
     - src: https://identity.netlify.com/v1/netlify-identity-widget.js
-
 hero:
-  name: Name
+  name: Testing
   text: Text.
   tagline: Tag Line...
   actions:
@@ -16,7 +14,6 @@ hero:
     - theme: alt
       text: View on LinkedIn
       link: https://www.linkedin.com/in/francisco-b-sousa-5204a712b/
-
 features:
   - icon: ⚡️
     title: Epic feature 1 title
