@@ -9,7 +9,7 @@ collections:
     name: "main"
     files:
       - label: "Home page"
-        name: "home page"
+        name: "home"
         file: "src/index.md"
         delete: false
         fields:
@@ -36,12 +36,12 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Details", name: "details", widget: "string" }
       - label: "About page"
-        name: "about page"
+        name: "about"
         file: "src/about.md"
         delete: false
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Meta description", name: "description", widget: "string" }
+          - { label: "Meta description", name: "description", widget: "string", required: false }
           - { label: "Body", name: "body", widget: "markdown" }
   - label: "Blog"
     name: "blog"
@@ -49,5 +49,5 @@ collections:
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "Meta description", name: "description", widget: "string" }
+      - { label: "Meta description", name: "description", widget: "string", required: false }
       - { label: "Body", name: "body", widget: "markdown" }
