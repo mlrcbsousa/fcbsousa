@@ -1,6 +1,10 @@
 ---
 layout: home
 
+head:
+  - - script
+    - src: https://identity.netlify.com/v1/netlify-identity-widget.js
+
 hero:
   name: Name
   text: Text.
@@ -12,6 +16,7 @@ hero:
     - theme: alt
       text: View on LinkedIn
       link: https://www.linkedin.com/in/francisco-b-sousa-5204a712b/
+
 features:
   - icon: ⚡️
     title: Epic feature 1 title
@@ -23,3 +28,19 @@ features:
     title: Epic feature 3 title
     details: Epic feature 3 details
 ---
+
+<script setup>
+import { onMounted } from 'vue'
+
+onMounted(() => {
+	if (window.netlifyIdentity) {
+		window.netlifyIdentity.on("init", user => {
+			if (!user) {
+				window.netlifyIdentity.on("login", () => {
+					document.location.href = "/admin/";
+				});
+			}
+		});
+	}
+})
+</script>
