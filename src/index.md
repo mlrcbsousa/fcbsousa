@@ -5,7 +5,7 @@ head:
     - src: https://identity.netlify.com/v1/netlify-identity-widget.js
 hero:
   name: Miscellanea
-  text: In this site you'll find texts on various different subjects
+  text: Musings from a voracious reader's mind
   tagline: Eschew Obfuscation
   actions:
     - theme: brand
