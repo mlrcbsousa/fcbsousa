@@ -6,7 +6,7 @@ head:
 hero:
   name: Miscellanea
   text: Musings from a voracious reader's mind
-  tagline: Eschew Obfuscation
+  tagline: Eschew obfuscation
   actions:
     - theme: brand
       text: About
