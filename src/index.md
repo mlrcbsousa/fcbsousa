@@ -4,9 +4,9 @@ head:
   - - script
     - src: https://identity.netlify.com/v1/netlify-identity-widget.js
 hero:
-  name: Testing
-  text: Text.
-  tagline: Tag Line...
+  name: Miscellanea
+  text: Musings from a voracious reader's mind
+  tagline: Eschew obfuscation
   actions:
     - theme: brand
       text: About
