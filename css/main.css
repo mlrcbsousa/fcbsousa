@@ -1,7 +1,7 @@
 /* 1. Base */
 
 html {
-  background-color: #3b8d99;
+  background-color: #180cac; /* #3b8d99; */
   background-image: linear-gradient(to bottom right, #180cac, #1c6b78); /* #1c6b78, #5ac0c7 */
   color: #fff;
   font-family: "Quicksand", sans-serif;
