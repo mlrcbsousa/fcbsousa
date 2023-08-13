@@ -4,9 +4,68 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Alex Jefferson – Tech Recruiter</title>
+    <title>Francisco B. Sousa – Communication Expert</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/minireset.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animations.css">
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   </head>
   <body>
-    <h1>Hello world!</h1>
+    <div id="wallpaper" class="wallpaper" data-image="images/desert.jpg"></div>
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <!-- srcset="images/francisco.jpg 1x,
+                  images/francisco@2x.jpg 2x,
+                  images/francisco@3x.jpg 3x" -->
+          <img id="pictureImage" class="picture-image"
+              src="images/francisco.jpg"
+              alt="Portrait of Francisco B. Sousa"
+              width="320"
+              height="320">
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">
+          Hi, I'm Francisco B. Sousa
+        </h1>
+        <p class="job">
+          Communication Expert
+        </p>
+        <hr class="hr">
+        <div class="description">
+          <p>
+            I spend my time traveling the world,
+            helping individuals and businesses
+            communicate their vision effectively.
+          </p>
+        </div>
+        <div class="contact">
+          <a class="button" href="mailto:fcbsousa@gmail.com">
+            Get in touch
+          </a>
+        </div>
+        <ul class="social">
+          <li>
+            <a>
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </main>
+    </div>
+    <noscript>
+      <style type="text/css">
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
   </body>
 </html>
